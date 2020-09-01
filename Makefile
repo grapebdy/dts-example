@@ -8,8 +8,8 @@ all: build
 
 build:
 	gcc $(CFLAGS) -o gemini.dts.tmp gemini.dts
-	dtc -I dts -O dts gemini.dts.tmp -o gemini-build.dts
-	dtc -I dts -O dtb -o gemini.dtb gemini-build.dts
+	dtc -I dts -O dts gemini.dts.tmp -o gemini.dts.rd
+	dtc -I dts -O dtb -o gemini.dtb gemini.dts.rd
 
 clean:
-	rm -fr *.dtb *.pre.tmp gemini-build.dts *.dts.tmp
+	rm -fr *.dtb *.pre.tmp *.dts.rd *.dts.tmp

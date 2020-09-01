@@ -1,0 +1,5 @@
+*.dtb
+*.dts.rd
+*.dts.tmp
+*.pre.tmp
+

@@ -2,5 +2,5 @@
 #define __CONFIG_H__
 
 
-#define PCIE_ADDR	0x1000000
+#define PCIE_BASE_ADDR	0x1000000
 #endif
